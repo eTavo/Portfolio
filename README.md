@@ -6,7 +6,7 @@ Este es mi portfolio creado con Python, Django, HTML, CSS y JS.
 **Emmanuel Tavolaro**
 
 www.linkedin.com/in/emmanuel-tavolaro
-*[Instagram](https://www.instagram.com/emma18_ok/)
+https://www.instagram.com/emma18_ok/
 
 ## Instalacion
 Este es un proyecto web el cual no necesita instalación. Simplemente abre la carpeta o haz doble click en el .html
