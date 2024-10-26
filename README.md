@@ -2,10 +2,13 @@
 
 Este es mi portfolio creado con Python, Django, HTML, CSS y JS.
 
-## Autor -
+## Autor
 **Emmanuel Tavolaro**
 
+## Linkedin
 www.linkedin.com/in/emmanuel-tavolaro
+
+## Instagram
 https://www.instagram.com/emma18_ok/
 
 ## Instalacion
