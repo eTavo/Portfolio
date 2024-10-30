@@ -1,7 +1,7 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="es  ">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,26 +16,18 @@
     <div id="particles-js"></div>
     
     <nav class="navbar navbar-light" style="background-color: #0a0a0a;">
-        <a class="navbar-brand" href={% url 'index' %}  style="color: #ffffff; font-size: 150%">Emmanuel Tavolaro</a>
+        <a class="navbar-brand" style="color: #ffffff; font-size: 150%">Sistema Gestion</a>
         
-        <ul class="nav justify-content-end">
-            
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href={% url 'index' %} style="font-size: 125%;"><i class="fa-solid fa-house"></i>  Home</a>
-            </li>
-            
-            <li class="nav-item">
-                <a class="nav-link" href={% url 'about' %} style="font-size: 125%;"><i class="fa-solid fa-user"></i> About</a>
-            </li>
-            
-            <li class="nav-item">
-                <a class="nav-link" href={% url 'projects' %} style="font-size: 125%;"><i class="fa-solid fa-laptop-code"></i> Projects</a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href={% url 'exit' %} style="font-size: 125%;"><i class="fa-solid fa-laptop-code"></i> Salir</a>
-            </li>
-            
+        <ul class="nav justify-content-end">    
+            {% if request.user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href={% url 'exit' %} style="font-size: 125%;"><i class="fa-solid fa-house"></i> Salir</a>
+                </li>
+            {% else %}
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href={% url 'index' %} style="font-size: 125%;"><i class="fa-solid fa-house"></i> Login</a>
+                </li>
+            {% endif %}
         </ul>
     
     </nav>
