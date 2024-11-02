@@ -3,12 +3,12 @@
 
 <div class="container">
     <h1 class="titulo">LOGIN</h1><br>   
-    <form action="" method="post">
+    <form method="post" class="formu">
         {% csrf_token %}
     
-        <input type="text" name="username" id="" placeholder="Nombre de Usuario"><br>
-        <input type="text" name="password" id="" placeholder="Contraseña"><br>
-        <button type="submit">Iniciar Sesion</button>
+        <input type="text" name="username" id="" placeholder="Nombre de Usuario" style="margin-left: 43%; background: fixed;"><br>
+        <input type="text" name="password" id="" placeholder="Contraseña" required style="margin-left: 43%; background: fixed;">
+        <button type="submit" style="margin-left: 46%; margin-top: 1%;">Iniciar Sesion</button>
     </form>
 </div>
 
